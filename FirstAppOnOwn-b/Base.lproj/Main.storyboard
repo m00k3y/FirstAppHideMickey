@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9059" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9049"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="FirstAppOnOwn_b" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wNV-7M-GsL">
+                                <rect key="frame" x="-2" y="481" width="186" height="30"/>
+                                <animations/>
+                                <state key="normal" title="Hide Blue Mickey"/>
+                                <connections>
+                                    <action selector="HideBlueMickey:" destination="BYZ-38-t0r" eventType="touchUpInside" id="sTX-sY-NsY"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kDl-D7-jRf">
+                                <rect key="frame" x="235" y="481" width="131" height="30"/>
+                                <animations/>
+                                <state key="normal" title="Hide Red Mickey">
+                                    <color key="titleColor" red="1" green="0.09498316509277227" blue="0.11475892990428194" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="Hide:" destination="BYZ-38-t0r" eventType="touchUpInside" id="hJe-DK-Xmg"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="BlueHiddenMickey" translatesAutoresizingMaskIntoConstraints="NO" id="nOZ-9P-zVQ">
+                                <rect key="frame" x="-22" y="200" width="226" height="128"/>
+                                <animations/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="RedHiddenMickey" translatesAutoresizingMaskIntoConstraints="NO" id="RgR-fl-Vno">
+                                <rect key="frame" x="193" y="200" width="214" height="128"/>
+                                <animations/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lFZ-gb-1pr">
+                                <rect key="frame" x="158" y="430" width="72" height="30"/>
+                                <animations/>
+                                <state key="normal" title="Show All"/>
+                                <connections>
+                                    <action selector="ShowAll:" destination="BYZ-38-t0r" eventType="touchUpInside" id="z2O-DL-n8Q"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <connections>
+                        <outlet property="BlueHiddenMickey" destination="nOZ-9P-zVQ" id="Rdh-ff-c22"/>
+                        <outlet property="HideBlueMickeyBtn" destination="wNV-7M-GsL" id="sMU-EK-kwN"/>
+                        <outlet property="HideRedMickeyBtn" destination="kDl-D7-jRf" id="T7t-ap-N4a"/>
+                        <outlet property="RedHiddenMickey" destination="RgR-fl-Vno" id="POg-Nv-iC0"/>
+                        <outlet property="ShowAll" destination="lFZ-gb-1pr" id="NDV-SU-XDV"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="245" y="312"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="BlueHiddenMickey" width="300" height="300"/>
+        <image name="RedHiddenMickey" width="300" height="300"/>
+    </resources>
+</document>
